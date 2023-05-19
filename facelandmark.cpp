@@ -104,8 +104,7 @@ cv::Mat video(){
             break;
         }
         // キャプチャしたフレームを表示する
-        resize(frame,frame,cv::Size(640,460
-        」),0,0,cv::INTER_LINEAR_EXACT);
+        resize(frame,frame,cv::Size(640,460),0,0,cv::INTER_LINEAR_EXACT);
         cv::Mat gray = return_gray(frame);
         cv::Mat f_landmarkframe = drow_facelandmark(frame,gray);
         cv::namedWindow("live");
@@ -127,10 +126,7 @@ cv::Mat video(){
 
 
 
-
-
-
-
-int main(){
+int main()
+{
 video();
 }
